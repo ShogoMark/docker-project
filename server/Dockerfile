@@ -1,8 +1,8 @@
-FROM node
+FROM node:14
 
 RUN mkdir -p /home/app
 
-COPY ../server/package*.json /home/backend
+COPY package*.json /home/backend
 
 RUN npm install
 
