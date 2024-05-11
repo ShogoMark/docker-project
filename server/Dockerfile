@@ -6,7 +6,7 @@ COPY package*.json /home/backend/
 
 RUN npm install
 
-COPY ../server /home/backend/
+COPY ./server /home/backend/
 
 EXPOSE 8080
 
